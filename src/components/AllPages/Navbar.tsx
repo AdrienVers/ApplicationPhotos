@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/Logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
 	return (
@@ -14,7 +15,9 @@ function Navbar() {
 				<span>Vidéos</span>
 				<span>Designs</span>
 				<span>Blog</span>
-				<span>{"Application"}</span>
+				<Link href="/">
+					<span>{"Application"}</span>
+				</Link>
 				<span>Contact</span>
 			</div>
 			<div className="NavbarButtonContainer">
@@ -22,7 +25,9 @@ function Navbar() {
 				<button>{"Se connecter"}</button>
 				<button>{"S'inscrire"}</button>
                 */}
-				<button>{"Mes photos"}</button>
+				<Link href="/echanges">
+					<button>{"Mes photos"}</button>
+				</Link>
 				<button>{"Mon profil"}</button>
 			</div>
 		</NavbarGlobal>
