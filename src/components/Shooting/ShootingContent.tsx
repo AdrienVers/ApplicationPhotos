@@ -10,28 +10,59 @@ function ShootingContent() {
 			<div className="ShootingList">
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
-					<div className="PhotoFilter"></div>
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 				<div className="ShootingPhoto">
 					<Image className="Photo" src={Photo} alt="Photo" />
+					<div className="PhotoFilter" />
+					<div className="PhotoSelecter">
+						<input type="checkbox" />
+					</div>
 				</div>
 			</div>
 		</ShootingContentGlobal>
@@ -58,6 +89,8 @@ const ShootingContentGlobal = styled.div`
 
 		.ShootingPhoto {
 			position: relative;
+			max-width: 300px;
+			max-height: 300px;
 
 			&:hover {
 				cursor: pointer;
@@ -68,9 +101,17 @@ const ShootingContentGlobal = styled.div`
 				}
 			}
 
+			&:not(:hover) {
+				.PhotoFilter {
+					opacity: 0;
+					transition: opacity 0.5s;
+				}
+			}
+
 			.Photo {
-				max-width: 300px;
-				max-height: 300px;
+				max-width: 100%;
+				max-height: 100%;
+				border-radius: 5px;
 			}
 
 			.PhotoFilter {
@@ -81,6 +122,23 @@ const ShootingContentGlobal = styled.div`
 				height: 100%;
 				background-color: rgba(0, 0, 0, 0.5);
 				opacity: 0;
+				border-radius: 5px;
+			}
+
+			.PhotoSelecter {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				font-size: 1.5rem;
+
+				input {
+					height: 20px;
+					width: 20px;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
 			}
 		}
 	}

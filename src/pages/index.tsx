@@ -77,44 +77,54 @@ export default function Home() {
 const HomeGlobal = styled.div`
 	background-color: white;
 	color: black;
-  display : flex;
-  flex-direction : column;
-  align-items : center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  h1 {
-    margin : 20px 0px;
-  }
+	h1 {
+		margin: 20px 0px;
+		text-align: center;
+	}
 
 	.Description {
 		display: flex;
 		flex-direction: row;
-    padding : 0px 20px;
+		padding: 0px 20px;
 
 		.DescriptionText {
 			width: 70%;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
 
-      h3 {
-        margin : 0px;
-      }
+			@media (max-width: 900px) {
+				width: 100%;
+			}
 
-      p {
-        margin : 10px 0px 0px 0px;
-      }
+			h3 {
+				margin: 0px;
+			}
+
+			p {
+				margin: 10px 0px 0px 0px;
+			}
 		}
 
 		.DescriptionImage {
 			width: 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-      .Image {
-        width: 50%;
-        height: auto;
-        padding : 10px;
+			@media (max-width: 900px) {
+				display: none;
+			}
+
+			.Image {
+				width: 50%;
+				height: auto;
+				padding: 10px;
+			}
 		}
 	}
 `;

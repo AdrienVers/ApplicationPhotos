@@ -1,12 +1,12 @@
 import React from "react";
-import EditContent from "../components/Retouche/EditContent";
-import EditNavbar from "../components/Retouche/EditNavbar";
+import ShootingContent from "../components/Shooting/ShootingContent";
+import ShootingNavbar from "../components/Shooting/ShootingNavbar";
 
 function Retouches() {
 	return (
 		<div>
-			<EditNavbar />
-			<EditContent />
+			<ShootingNavbar />
+			<ShootingContent />
 		</div>
 	);
 }
