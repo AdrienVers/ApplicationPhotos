@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "@emotion/styled";
 import Image from "next/image";
-import Photoshoot from "../assets/PhotoShoot.jpg";
+import Photoshoot from "../assets/Photoshoot.jpg";
 
 export default function Home() {
 	return (
