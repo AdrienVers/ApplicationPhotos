@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 import Image from "next/image";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Logo.png";
 import Link from "next/link";
 import { NAVBAR_LINKS } from "./NavbarLinks";
 
