@@ -6,7 +6,7 @@ Le photographe a exprimé le besoin d'avoir une application qui lui permettra de
 
 ### Les exigences et contraintes : 
 
-Le nombre de photos prises lors d'un shooting peut atteindre les 200 photos par séance, une telle quantité nécessite une capacité de stockage considérable, surtout compte tenu de la taille importante des fichiers (pouvant peser jusqu'à 5 Go pour l'ensemble des photos). Il est donc essentiel de prévoir un espace de stockage adéquat pour le projet. Cependant, le client ne souhaite pas payer pour un service de stockage externe, ce qui est une autre contrainte à prendre en compte.
+Le nombre de photos prises lors d'un shooting peut atteindre les 200 photos par séance, une telle quantité nécessite une capacité de stockage conséquente, surtout compte tenu de la taille importante des fichiers (pouvant peser jusqu'à 5 Go pour l'ensemble des photos). Il est donc essentiel de prévoir un espace de stockage adéquat pour le projet. Cependant, le client ne souhaite pas payer pour un service de stockage externe, ce qui est une autre contrainte à prendre en compte.
 
 ### Solution proposée par le développeur : 
 
